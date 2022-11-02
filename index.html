@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Dia 10</h1>
+    <input type="text" id="input">
+</body>
+
+</html>
+
+<script>
+    var elMeuNom = "Silemani"
+    console.log("El contingut de la variable és " + elMeuNom + " i el tipus de la variable és", typeof elMeuNom)
+
+    var laMevaEdat = "21"
+    elTipusDeVariableDeLaMevaEdat = typeof laMevaEdat
+
+    console.log("Contingut", laMevaEdat)
+    console.log("Tipus", elTipusDeVariableDeLaMevaEdat)
+
+    var edat = 21
+    console.log(edat, typeof edat)
+    var edat2030 = edat + 8
+    console.log("Al 2030 tindré ", edat2030, " anys.")
+
+    function suma(a,b) {
+        
+        return a + b
+    }
+
+    suma(10,20)
+    console.log("La suma és", suma(10,20))
+
+    function mostraInformacio(laVariable)
+    {
+        console.log("Contingut: ", laVariable)
+        console.log("Tipus: ", typeof(laVariable))
+    }
+    
+    var variable1 = "Silemani"
+    var variable2 = 13
+    var variable3 = false
+
+    hola = mostraInformacio(variable1)
+    console.log(hola)
+    
+
+    const nom2 = prompt("Com et dius?")
+    console.log("El teu nom és", nom2)
+    console.log(document.getElementById("input"))
+
+    
+
+</script>

@@ -1,10 +1,3 @@
-
-console.log(prova())
-
-function prova(){
-    console.log("hola que tal")
-} 
-
 // var elMeuNom = "Silemani"
     // console.log("El contingut de la variable és " + elMeuNom + " i el tipus de la variable és", typeof elMeuNom)
 
@@ -27,11 +20,11 @@ function prova(){
     // suma(10,20)
     // console.log("La suma és", suma(10,20))
 
-    function mostraInformacio(laVariable)
-    {
-        console.log("Contingut: ", laVariable)
-        console.log("Tipus: ", typeof(laVariable))
-    }
+    // function mostraInformacio(laVariable)
+    // {
+    //     console.log("Contingut: ", laVariable)
+    //     console.log("Tipus: ", typeof(laVariable))
+    // }
     
     // var variable1 = "Silemani"
     // var variable2 = 13

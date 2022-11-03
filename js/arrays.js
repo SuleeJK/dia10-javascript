@@ -44,4 +44,13 @@ function demoArrays() {
 
     numeros.forEach(calcularMitjana)
     console.log(mitjana)
+
+
+    var lletres = ["a","b","c","d"]
+
+    for (var i = 0; i < lletres.length; i++){
+        console.log(lletres[i])
+    }
+
+    // console.log("En total hi han ", i, " lletres.")
 }

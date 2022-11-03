@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var coses = ["Jordi", 3, "Laura", 2, 3, "Dani", "Sandra", 3, 6]
+
+    var numeroDeTextes = 0
+    var numeroDeNumeros = 0
+    var noms = [] // Array
+    var numeros = [] // Array
+
+    coses.forEach(function(valor, pos){
+        if(typeof valor == 'string'){
+            numeroDeTextes++
+            noms.push(pos)
+        }
+        if(typeof valor == 'number'){
+            numeroDeNumeros++
+            numeros.push(pos)
+        }
+    })
+
+    console.log("Total Noms:", numeroDeTextes)
+    console.log("Total Números:", numeroDeNumeros)
+    console.log("Array de Noms:", noms)
+    console.log("Array de Números:", numeros)
+</script>
+<body>
+    <h1>Suma Total de Textes i Números</h1>
+</body>
+</html>

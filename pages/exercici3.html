@@ -14,10 +14,16 @@
     var noms = [] // Array
     var numeros = [] // Array
 
+    // function contaTextes(el,pos){
+    //     if(typeof valor == 'string'){
+    //         noms.push(pos)
+    //     }
+        
+    // }
     coses.forEach(function(valor, pos){
         if(typeof valor == 'string'){
             numeroDeTextes++
-            noms.push(pos)
+            noms.push(valor)
         }
         if(typeof valor == 'number'){
             numeroDeNumeros++

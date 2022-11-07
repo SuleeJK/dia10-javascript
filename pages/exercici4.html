@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: rgb(239, 53, 53);">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Objectes en JS</h1>
-    <div id="cotxe"></div>
+    <div id="cotxe">Valor Inicial</div>
+
     <script>
-        document.getElementById("cotxe").innerHTML="Fiat 500"
+        console.log(document.getElementById("cotxe").innerHTML)
+        document.getElementById("cotxe").innerHTML = "Fiat 500"
+
+        // var sule = {}
+        // sule.nom = "Silemani",
+        // cognom = "Jangana",
+        // sule.edat = 21,
+        // sule.descripcio = function () {
+        //  return this.nom + " té " + this.edat + " anys."
+        //     }
+
+        // var sule = {
+        //     nom:"Silemani",
+        //     cognom: "Jangana",
+        //     edat: 21,
+        //     descripcio: function () {
+        //         return this.nom + " té " + this.edat + " anys."
+        //     },
+
+        //     nomComplet(){
+        //         return this.nom + " " + this.cognom
+        //     }
+        // }
+
+        // console.log(
+        //     sule.nomComplet(),
+        //     sule.edat
+        // )
+
+        // Fer 1 objecte de 3 cotxes
+        // Han de tenir marca, model, any, preu
+        // esClassic (ens ha de tornar si té més de 25 anys)
+        // edat del cotxe
+
+        var cotxe = {
+            marca: "Seat",
+            model: "Ibiza",
+            any: 2022,
+            preu: 17.000,
+            esClassic: function () {
+
+                if (this.edatCotxe() > 25) {
+                    return true
+                }
+
+                else {
+                    return false
+                }
+            },
+
+            edatCotxe: function () {
+                return 2023 - this.any
+            },
+
+            valorCotxe: function () {
+
+                console.log(this.preu, this.edatCotxe())
+                return this.preu / this.edatCotxe()
+
+
+            }
+
+
+        }
+
+        if (cotxe.esClassic() == true) console.log("És un cotxe classic")
+
+        else if (cotxe.esClassic() == false) console.log("No és un cotxe classic")
+
+        console.log("El valor del cotxe actualment és de", cotxe.valorCotxe(), "€")
+
+
+
+
+
+
+
     </script>
+
 </body>
+
 </html>

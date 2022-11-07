@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: red;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script></script>
+    <!-- Descarregar dades d'internet -->
+    <script>
+        fetch('https://dummyjson.com/users')
+        .then(res => res.json())
+        .then(
+            res =>{
+                console.log(res)
+            }
+        );
+    </script>
+
+    
 </body>
 </html>

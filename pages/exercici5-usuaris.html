@@ -11,11 +11,20 @@
     <script>
         fetch('https://dummyjson.com/users')
         .then(res => res.json())
-        .then(
-            res =>{
-                console.log(res)
-            }
-        );
+        .then(function(resposta){
+            console.log(resposta)
+        });
+
+
+
+        // .then(
+        //     res =>{
+        //         console.log("Ja estic")
+        //         console.log(res)
+        //     }
+        // );
+
+        console.log("Vaig fent.")
     </script>
 
     

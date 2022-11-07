@@ -63,16 +63,35 @@
                 }
             },
 
+            descripcio: function () {
+                if (this.edatCotxe() == 1) {
+                    return "El cotxe és de la marca " + this.marca + " i model " + this.model + " i té " + this.edatCotxe() + " any"
+                }
+
+                else {
+                    return "El cotxe és de la marca " + this.marca + " i model " + this.model + " i té " + this.edatCotxe() + " anys"
+                }
+            },
+
             edatCotxe: function () {
                 return 2023 - this.any
             },
 
             valorCotxe: function () {
 
-                console.log(this.preu, this.edatCotxe())
+
                 return this.preu / this.edatCotxe()
 
 
+            },
+
+            crearDivPerWeb: function () {
+
+                // document.write("El cotxe és de la marca" + this.marca)
+                return "<div>"
+                    + "<h1>" + this.marca + "</h1>"
+                    + "<p>" + this.descripcio() + "</p>"
+                    + "</div>"
             }
 
 
@@ -84,10 +103,7 @@
 
         console.log("El valor del cotxe actualment és de", cotxe.valorCotxe(), "€")
 
-
-
-
-
+        document.getElementById("cotxe").innerHTML = cotxe.crearDivPerWeb()
 
 
     </script>

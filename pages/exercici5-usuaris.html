@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <button onclick="descarregarUsuaris()">Descarregar Usuaris</button>
     <script>
-        function descarregarUsuaris() {
-            console.log('Començo')
-            fetch('https://dummyjson.com/users')
-                .then(res => res.json())  // ens ho converteix
-                .then(function (resposta) {
-                    console.log(resposta)
-                    console.log(typeof resposta)
-                    resposta.users.forEach(
-                        function (usuari, posicio) {
-                            document.write("<h1>" + usuari.firstName + " (" + posicio + ")</h1>")
-                        }
+        function descarregarUsuaris(){
+        console.log('Començo')
+        fetch('https://dummyjson.com/users')
+        .then(res => res.json())  // ens ho converteix
+        .then(function(resposta){
+            console.log(resposta)
+            console.log(typeof resposta)
+            resposta.users.forEach(
+                function(usuari,posicio){
+                    document.write("<h1>"+usuari.firstName+" ("+posicio+")</h1>")
+                }
+                
+                );
+        });
 
-                    );
-                });
-
-        }
+    }
 
         // res =>{
         //     console.log('Ja estic')
         //     console.log(res)
         // }
-
+        
         console.log('Vaig fent..')
-
+        
     </script>
 </body>
-
 </html>

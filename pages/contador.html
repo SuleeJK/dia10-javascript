@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: red;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+
+<body>
+    <script>
+        var i = 0
+
+        function sumar() {
+            i++
+            actualitzarComptador()
+        }
+
+        function restar() {
+            i--
+            actualitzarComptador()
+        }    
+        
+        function actualitzarComptador(){
+            document.getElementById("contador").innerHTML = i
+        }
+
+        
+
+    </script>
+
+    <h1>Contador</h1>
+
+    <button onclick="sumar()">+</button>
+    
+    <div id="contador"><script>actualitzarComptador()</script></div>
+
+
+    <button onclick="restar()">-</button>
+
+
+
+
+
+</body>
+
+</html>

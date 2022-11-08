@@ -20,24 +20,46 @@
         function restar() {
             i--
             actualitzarComptador()
-        }    
-        
-        function actualitzarComptador(){
+        }
+
+        function actualitzarComptador() {
             document.getElementById("contador").innerHTML = i
         }
 
-        
+        function setTimer(func) {
+            setTimeout(function sumar() {
+                eval(func);
+            }, 2000);
+        }
+
+        function sumaAutomatica(){ 
+            resultat = setInterval(sumar,1000)
+        }
+
+        function restaAutomatica(){ 
+            resultat = setInterval(restar,1000)
+        }
+
+        function stop(){
+            clearInterval(resultat)
+        }
 
     </script>
 
     <h1>Contador</h1>
 
     <button onclick="sumar()">+</button>
-    
-    <div id="contador"><script>actualitzarComptador()</script></div>
+
+    <div id="contador">
+        <script>actualitzarComptador()</script>
+    </div>
 
 
     <button onclick="restar()">-</button>
+    <button onclick="stop()">Parar</button>
+    <button onclick="sumaAutomatica()">Sumar Automàticament</button>
+    <button onclick="restaAutomatica()">Restar Automàticament</button>
+
 
 
 
